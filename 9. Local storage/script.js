@@ -1,8 +1,3 @@
-// let visitas = parseInt(localStorage.getItem('visitas') || 0)
-// visitas++
-// localStorage.setItem('visitas', visitas)
-// document.body.innerHTML += `Visitas: ${visitas}`;
-
 // localStorage.setItem('nome', 'joao')
 // const nome = localStorage.getItem('nome')
 // localStorage.removeItem('nome')
@@ -46,4 +41,58 @@
 //   tarefas = [];
 //   localStorage.removeItem("tarefas");
 //   renderizarTarefas();
+// };
+
+//exercicio 1
+// salvarProduto.onsubmit = (e) => {
+//     e.preventDefault();
+//     const li = document.createElement('li')
+//     li.textContent = tarefa.value
+//     const btn = document.createElement('button')
+//     btn.textContent = 'Excluir'
+//     btn.onclick = () =>
+//         li.remove()
+//         li.appendChild(btn);
+//         lista.appendChild(li);
+//         tarefa.value = "";
+
+// }
+
+//------------------------------------------------------
+
+//exercicio 2
+// let visitas = parseInt(localStorage.getItem('visitas') || 0)
+// visitas++
+// localStorage.setItem('visitas', visitas)
+// document.body.innerHTML += `Visitas: ${visitas}`;
+
+//--------------------------------------------------------
+
+//exercicio 3
+// if (localStorage.getItem("tema") === "escuro") {
+//   document.body.classList.add("escuro");
+// }
+
+// document.getElementById("tema").onclick = () => {
+//   document.body.classList.toggle("escuro");
+//   const temaAtual = document.body.classList.contains("escuro") ? "escuro" : "claro";
+//   localStorage.setItem("tema", temaAtual);
+// };
+
+//-----------------------------------------------------------
+
+//exercicio 4
+// const campo = document.getElementById("nome");
+// campo.value = sessionStorage.getItem("nome") || "";
+// campo.oninput = () => {
+//   sessionStorage.setItem("nome", campo.value);
+// };
+
+//----------------------------------------------------------------
+
+//exercicio 5
+// const idioma = document.getElementById("idioma");
+// idioma.value = localStorage.getItem("idioma") || "pt";
+// idioma.onchange = () => {
+//   localStorage.setItem("idioma", idioma.value);
 // };
