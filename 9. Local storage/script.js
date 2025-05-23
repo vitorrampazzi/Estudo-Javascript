@@ -60,7 +60,7 @@
 
 //------------------------------------------------------
 
-//exercicio 2
+// exercicio 2
 // let visitas = parseInt(localStorage.getItem('visitas') || 0)
 // visitas++
 // localStorage.setItem('visitas', visitas)
@@ -96,3 +96,45 @@
 // idioma.onchange = () => {
 //   localStorage.setItem("idioma", idioma.value);
 // };
+
+//exercicio 6
+// const salvarNome = () => {
+//     const nome = document.getElementById('nome').value
+//     localStorage.setItem('nomeUsuario', nome)
+//     mostrarBoasVindas()
+// }
+// const mostrarBoasVindas = () => {
+//     const nomeSalvo = localStorage.getItem('nomeUsuario')
+//     if(nomeSalvo){
+//         document.getElementById('boasVindas').textContent = `Boas vindas ${nomeSalvo}`
+//     }
+// }
+// mostrarBoasVindas()
+
+// const adicionarTarefa = () => {
+//     const tarefa = document.getElementById('tarefa').value
+//     if(!tarefa) return;
+//     const tarefas = localStorage.getItem('tarefas') || []
+//     tarefas.push(tarefa)
+//     localStorage.setItem('tarefas', JSON.stringify(tarefas))
+//     exibirTarefas()
+// }
+
+//   function exibirTarefas() {
+//     const lista = document.getElementById('listaTarefas');
+//     lista.innerHTML = '';
+//     const tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
+//     tarefas.forEach((tarefa, index) => {
+//       lista.innerHTML += `<li>${tarefa} <button onclick="removerTarefa(${index})">X</button></li>`;
+//     });
+//   }
+
+// Exericicio 8
+// const mudarTema = () =>{
+//     const dado = localStorage.getItem('tema')
+//     if(dado === 'escuro'){
+//         localStorage.setItem('tema', 'claro')
+//     }else{
+//         localStorage.setItem('tema', 'escuro')
+//     }
+// }
